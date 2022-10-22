@@ -26,3 +26,20 @@ if (a<100){
 }else{
     Console.WriteLine($"Third digit of numeric is {ThirdDigit(a)}");
 }*/
+
+//Task #15. Write program witch take number representing the day of the week and check it's weekend or not.
+
+void Week(int a){
+    if (a<1 || a>7) {
+    Console.WriteLine($"Input data `{a}`  error. pls read calendar manual");
+} else {
+    if (a<6){
+        Console.WriteLine("NO");    
+    }else{
+        Console.WriteLine("YES");
+    }
+ }
+}
+Console.WriteLine("Pls enter number representing the day of the week:");
+int a = Convert.ToInt32(Console.ReadLine());
+Week(a);
